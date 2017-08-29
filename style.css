@@ -1,0 +1,67 @@
+/* Cascading Style Sheet for the Schedule System */
+
+* {
+  /*border: 1px solid black;*/
+}
+
+h1, h2 {
+  font-family: 'Encode Sans', sans-serif;
+  color: rgb(255,0,0);
+}
+
+.main-content {
+  width: 100%;
+  height: 250px;
+  position: relative;
+}
+
+.info-content {
+  width: 25%;
+  height: 200px;
+  position: relative;
+  padding: 5px;
+  margin: 10px;
+  background: #bbebde;
+}
+
+.form-content {
+  font-family: 'Encode Sans', sans-serif;
+  font-style: oblique;
+  width: 40%;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+  bottom: 220px;
+  left: 500px;
+
+}
+
+table, td {
+  border-collapse: collapse;
+  border: solid;
+  background: rgb(236, 237, 217);
+}
+
+table {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+}
+
+td {
+  padding: 10px;
+}
+
+.database-content {
+  color: #7000ff;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 700;
+  position: relative;
+  float: none;
+  padding: 20px;
+  margin: 10px;
+  background-color: rgba(255, 230, 0, 0.46);
+  border: 2px solid #00ff0a;
+  border-radius: 5px;
+  display: inline-block;
+}
