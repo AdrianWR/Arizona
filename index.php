@@ -1,21 +1,4 @@
-<!DOCTYPE html5>
-
-<head>
-  <meta charset="utf-8"/>
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine|Encode+Sans">
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <title>Schedule</title>
-</head>
-
-<body>
-  <div class="header">
-    <h1>Schedule System</h1>
-    <ul>
-      <li>HomePage</li>
-      <li>Products</li>
-      <li>About</li>
-    </ul>
-  </div>
+<?php include ('header.php'); ?>
 
   <section class="main-content">
     <div class="info-content">
@@ -23,7 +6,7 @@
       <p>This is an example of the PHP POST method, used to insert information into a database via a HTML form.</p>
     </div>
     <div class="form-content">
-      <form method="POST">
+      <form action="include/signup-test.php" method="POST">
         <fieldset><legend>Cadastro de Usuário</legend>
           <table>
             <tr><td>Nome de Usuário:</td>
@@ -53,8 +36,10 @@
 
   <section class="database-content">
     <?php
-      include('include/connection.php');
-      include('include/signup.inc.php')
+      //include('include/connection.php');
+      // $loc = header(Location: ../);
+      //echo "<br /><br /><a href='test.html'>Me aperte</a>";
+      //include('include/signup.inc.php');
     ?>
   </section>
 
