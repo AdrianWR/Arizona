@@ -1,8 +1,8 @@
 <?php
 
   $DBservername = 'localhost';
-  $DBusername = 'adrian';
-  $DBpassword = 'sqlpasswd21<>';
+  $DBusername = 'root';
+  $DBpassword = '';
   $DBname = 'cem';
 
   try {
