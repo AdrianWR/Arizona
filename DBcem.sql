@@ -34,7 +34,7 @@ CREATE TABLE users (
   user_id int NOT NULL UNIQUE AUTO_INCREMENT,
   name varchar(90) NOT NULL UNIQUE,
   email varchar(45) NOT NULL,
-  phone varchar(20) NOT NULL,
+  phone varchar(20),
   alias varchar(45) UNIQUE,
   password varchar(255) NOT NULL UNIQUE,
   branch_line varchar(4),
