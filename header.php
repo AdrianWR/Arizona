@@ -12,9 +12,9 @@
   <h1>Schedule System</h1>
   <nav id="nav-bar">
     <ul>
-        <li><a href="./index.php">HomePage</a></li>
-        <li><a href="./index.php">Products</a></li>
-        <li><a href="./index.php">About</a></li>
+        <li><a href="./index.php">Início</a></li>
+        <li><a href="./index.php">Produtos</a></li>
+        <li><a href="./index.php">Sobre</a></li>
     </ul>
     <form>
       <input type="text" name="login-mail" placeholder="E-Mail">

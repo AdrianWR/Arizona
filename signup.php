@@ -17,13 +17,16 @@
             <td><input type="text" name="phone"></td>
           </tr>
           <tr><td>Ramal:</td>
-            <td><input type="text" name="branch_line" placeholder="0000"></td>
+            <td><input type="text" name="branch_line""></td>
           </tr>
           <tr><td>Status:</td>
             <td>
               <input type="radio" name="status" value="1">Ativo &nbsp
               <input type="radio" name="status" value="2">Inativo
             </td>
+          <tr><td>Senha:</td>
+            <td><input type="password" name="password"></td>
+          </tr>
           </tr>
           <tr><td colspan="2"><input type="submit" name="submit" value="Cadastrar Usuário"></td></tr>
         </table>
@@ -31,3 +34,28 @@
     </form>
   </div>
 </section>
+
+<?php
+  // Messages to the user regarding the signup
+  $message = $_GET["signup"];
+  if ($message) {
+    echo "<section class='signup-message'>";
+    // Different messages for each case
+    switch ($message) {
+      case "empty":
+        echo "Há campos vazios no cadastro.";
+        break;
+      case "invalidmail":
+        echo "O e-mail inserido não é válido.";
+        break;
+      case "invalidname":
+        echo "O nome inserido já está sendo utilizado.";
+        break;
+      case "success":
+        echo "Cadastro efetuado com sucesso!";
+        break;
+    }
+    echo"</section>";
+  }
+
+?>

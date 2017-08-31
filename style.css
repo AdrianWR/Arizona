@@ -1,7 +1,7 @@
 /* Cascading Style Sheet for the Schedule System */
 
 * {
-  /* border: 1px solid black; */
+   /*border: 1px solid black; */
 }
 
 body {
@@ -11,6 +11,10 @@ body {
 h1, h2 {
   font-family: 'Encode Sans', sans-serif;
   color: rgb(255,0,0);
+}
+
+h1 {
+  margin: 10px 10px;
 }
 
 #nav-bar {
@@ -49,7 +53,7 @@ h1, h2 {
   top: 0px;
 }
 
-#nav-bar input[type=text], input[type=password] {
+#nav-bar input[type=text], #nav-bar input[type=password] {
   margin-right: 10px;
   width: 200px;
   padding: 12px;
@@ -100,14 +104,15 @@ td {
   padding: 10px;
 }
 
-.database-content {
+.signup-message {
   color: #7000ff;
   font-family: 'Encode Sans', sans-serif;
   font-weight: 700;
   position: relative;
+  top: 100px;
   float: none;
   padding: 20px;
-  margin: 10px;
+  margin: 10px 40px;
   background-color: rgba(255, 230, 0, 0.46);
   border: 2px solid #00ff0a;
   border-radius: 5px;
