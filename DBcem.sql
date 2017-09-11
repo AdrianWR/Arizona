@@ -65,12 +65,14 @@ CREATE TABLE divisions (
 -- Tabela de equipamentos pertencentes à CEM
 CREATE TABLE equipments (
   equipment_id int NOT NULL UNIQUE AUTO_INCREMENT,
-  name varchar(70) NOT NULL,
+  name varchar(255) NOT NULL,
+  alias varchar(63) NOT NULL UNIQUE,
   patrimony int(6) UNIQUE,
-  photo longblob,
+  photo varchar(255) UNIQUE,
   division_id int,
   require_training boolean,
   PRIMARY KEY (equipment_id),
+  PRIMARY KEY (alias),
   FOREIGN KEY (division_id) REFERENCES divisions(division_id)
 );
 
