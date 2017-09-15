@@ -8,12 +8,9 @@ body {
   margin: 0;
 }
 
-h1, h2 {
+h1 {
   font-family: 'Encode Sans', sans-serif;
   color: rgb(255,0,0);
-}
-
-h1 {
   margin: 10px 10px;
 }
 
@@ -34,7 +31,7 @@ h1 {
 #nav-bar li {
   /*border: 1px solid #000000;*/
   color: #FFF;
-  background-color: rgba(255, 0, 0, 0.25);
+  background-color: rgba(200, 200, 100, 0.25);
   display: inline;
   font-family: 'Encode Sans', Arial, Helvetica, sans-serif;
   font-size: 16pt;
@@ -43,7 +40,14 @@ h1 {
   z-index: 200;
 }
 
+#nav-bar a:visited {
+  text-decoration: none;
+}
+
 #nav-login {
+  width: 600px;
+  height: 100px;
+  right: 300px;
   position: absolute;
   height: 100%;
   margin-right: 50px;
@@ -74,6 +78,20 @@ h1 {
   position: absolute;
   margin-top: 3px;
   margin-left: 8px;
+}
+
+#nav-login-error {
+  width: 80%;
+  position: relative;
+  bottom: 125px;
+  padding: 8px 10px;
+  background-color: #ffe680;
+  border: 2px solid #0000FF;
+  border-radius: 5px;
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 12pt;
+  font-weight: 800;
+  color: #FF0000;
 }
 
 

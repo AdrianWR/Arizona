@@ -1,5 +1,5 @@
 <?php
-
+$locationInfo = "Location: ../cadastro.php?signup=";
 if (isset($_POST['submit'])) {
   // Sign Up Variables from POST
   $name = $_POST["name"];
@@ -10,12 +10,12 @@ if (isset($_POST['submit'])) {
   // Error Handlers
   // Check for empty fields
   if (empty($name) || empty($email) || empty($password)) {
-    header("Location: ../index.php?signup=empty");
+    header($locationInfo."empty");
     exit();
   } else {
     // Check if email is valid
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      header("Location: ../index.php?signup=invalidmail");
+      header($locationInfo."invalidmail");
       exit();
     } else {
       // Check if there's another user with same name
@@ -23,10 +23,9 @@ if (isset($_POST['submit'])) {
       $result = $conn->query($sql);
       $resultCheck = $result->rowCount();
       if ($resultCheck > 0) {
-        header("Location: ../index.php?signup=invalidname");
+        header($locationInfo."invalidname");
         exit();
       } else {
-        echo "Tudo certo";
         // Insert the user in the database
         // Hashing the password
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
@@ -37,7 +36,7 @@ if (isset($_POST['submit'])) {
         $signup_statement->bindParam(':password', $hashedPassword);
         try {
           $signup_statement->execute();
-          header("Location: ../index.php?signup=success");
+          header($locationInfo."success");
         } catch(PDOException $e) {
           echo "Data not inserted " . $e->getMessage();
         }
