@@ -15,10 +15,14 @@
         <li><a href="./index.php">Início</a></li>
         <li><a href="./index.php">Produtos</a></li>
         <li><a href="./index.php">Sobre</a></li>
+        <li><a href="./index.php?signup">Cadastro</a></li>
     </ul>
-    <form>
-      <input type="text" name="login-mail" placeholder="E-Mail">
-      <input type="password" name="login-password" placeholder="Senha">
+    <form id="nav-login" method="POST" action="include/login.inc.php">
+      <?php $current_location = $_SERVER['REQUEST_URI']; ?>
+      <input type="hidden" name="current_location" value="<?php $current_location; ?>" />
+      <input type="text" name="email" placeholder="E-Mail">
+      <input type="password" name="password" placeholder="Senha">
+      <input type="submit" name="submit" value="Login">
     </form>
   </nav>
 

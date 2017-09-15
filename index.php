@@ -1,4 +1,6 @@
 <?php
   include ('header.php');
-  include ('signup.php');
-?>
+
+  if (isset($_GET['signup'])) {
+    include 'signup.php';
+  }

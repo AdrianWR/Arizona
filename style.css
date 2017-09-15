@@ -43,22 +43,39 @@ h1 {
   z-index: 200;
 }
 
-#nav-bar form {
+#nav-login {
   position: absolute;
   height: 100%;
   margin-right: 50px;
   padding: 14px 0;
-  right: 0px;
+  right: 100px;
   bottom: 0px;
   top: 0px;
 }
 
-#nav-bar input[type=text], #nav-bar input[type=password] {
+#nav-login input[type=text], #nav-login input[type=password] {
   margin-right: 10px;
   width: 200px;
   padding: 12px;
   border-radius: 5px;
 }
+
+#nav-login  input[type=submit] {
+  padding: 5px 20px;
+  border: 2px solid yellow;
+  background-color: #ffe899;
+  color: #589102;
+  border-radius: 10px;
+  font-family: 'Encode Sans', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 14pt;
+  font-stretch: ultra-expanded;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
 
 .main-content {
   width: 100%;
