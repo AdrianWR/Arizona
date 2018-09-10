@@ -72,7 +72,6 @@ CREATE TABLE equipments (
   division_id int,
   require_training boolean,
   PRIMARY KEY (equipment_id),
-  PRIMARY KEY (alias),
   FOREIGN KEY (division_id) REFERENCES divisions(division_id)
 );
 
